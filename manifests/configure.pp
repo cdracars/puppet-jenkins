@@ -29,4 +29,30 @@ class jenkins::configure {
       creates => '/var/lib/jenkins/jobs/selenium-template',
       require => Class['jenkins::package'];
   }
+
+  jenkins::plugin {
+    'analysis-core':;
+    'checkstyle':;
+    'dry':;
+    'phing':;
+    'plot':;
+    'pmd':;
+    'build-timeout':;
+    'claim':;
+    'disk-usage':;
+    'email-ext':;
+    'favorite':;
+    'git':;
+    'envinject':;
+    'jobConfigHistory':;
+    'project-stats-plugin':;
+    'redmine':;
+    'seleniumhq':;
+    'statusmonitor':;
+    'instant-messaging':;
+    'jabber':;
+    'tasks':;
+    'warnings':;
+  }
+
 }
